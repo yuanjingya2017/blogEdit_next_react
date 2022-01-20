@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import * as React from 'react'
-import {
-    Form,
-    FormItem,
-    Input
-} from './component/Form/index'
-
+import * as React from 'react';
+import CommentForm from './component/Form/CommentForm';
+import Header from './component/layout/Header';
+import ArticleList from './component/Article/List';
+import Recommand from './component/Article/Recommend/index';
+import indexStyle from './index.module.scss';
 export default () => {
     const form =  React.useRef(null)
     const submit =()=>{
@@ -20,24 +19,17 @@ export default () => {
     }
     return (
         <div>
+            <Header />
+            <div className={indexStyle.content}>
+                <div className={indexStyle.left}>
+                    <ArticleList />
+                    <CommentForm ref={form} />
+                </div>
+                <Recommand />
+            </div>
             <nav>
                 <Link href='/about'><a>About</a></Link>
             </nav>
-            <p>welcome to next.js</p>
-            <Form ref={ form } >
-                <FormItem name="name" label="我是"  >
-                    <Input  />
-                </FormItem>
-                <FormItem name="mes" label="我想对大家说"  >
-                    <Input   />
-                </FormItem>
-                <input  placeholder="不需要的input" />
-                <input/>
-            </Form>
-            <div className="btns" >
-                <button className="searchbtn"  onClick={ submit } >提交</button>
-                <button className="concellbtn" onClick={ reset } >重置</button>
-            </div>
         </div>
     )
 }

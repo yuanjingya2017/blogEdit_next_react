@@ -1,5 +1,5 @@
-import { Fragment } from "react/cjs/react.production.min"
-import * as React from 'react'
+import * as React from 'react';
+import formStyle from './Form.module.scss';
 
 export default class Form extends React.Component {
     constructor (props, context) {
@@ -41,7 +41,9 @@ export default class Form extends React.Component {
                 renderChildren.push(childrenTemp);
             }
         })
-        return renderChildren;
+        return <div className={formStyle.form}>
+            {renderChildren}
+        </div>;
     }
 }
 Form.displayName = 'form'

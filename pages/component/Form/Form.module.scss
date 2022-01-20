@@ -1,0 +1,13 @@
+.form {
+    .form_item {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        .item_input {
+            width: 300px;
+            padding: 4px 8px;
+            border: 1px solid #dad8d8;
+            border-radius: 5px;
+        }
+    }
+}

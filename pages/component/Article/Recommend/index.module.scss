@@ -1,0 +1,25 @@
+.recommand {
+    padding: 24px;
+    font-size: 18px;
+    color: #333333;
+    background-color: #fff;
+    min-width: 300px;
+    border-radius: 5px;
+    .title {
+        margin-bottom: 20px;
+    }
+    .list {
+        font-size: 14px;
+        color: #6B6B6B;
+        div {
+            padding-bottom: 8px;
+        }
+        .list_item {
+            display: flex;
+            justify-content: space-between;
+        }
+        .list_item span:last-child {
+            font-size: 12px;
+        }
+    }
+}

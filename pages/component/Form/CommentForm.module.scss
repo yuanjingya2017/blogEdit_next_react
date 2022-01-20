@@ -1,0 +1,24 @@
+.commonform {
+    background-color: #fff;
+    padding: 24px;
+    padding-right: 50%;
+    margin-top: 20px;
+    .btns {
+        text-align: center;
+        margin-top: 40px;
+        button {
+            border: none;
+            background-color: black;
+            color: #fff;
+            padding: 4px 20px;
+            border-radius: 4px;
+        }
+        .searchbtn {
+            margin-right: 100px;
+            background-color: #1E87F0;
+        }
+        .concellbtn {
+            background-color: #F9D423;
+        }
+    }
+}
