@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  color: #808D94;
+  padding: 30px 50px 30px 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  .header_crumb {
+    // color: red;
+  }
+  .header_search {
+    position: relative;
+    .header_search_input {
+      border: 1px solid #F5F5F5;
+      padding: 5px 10px;
+      border-radius: 5px;
+      width: 300px;
+    }
+    .search_btn {
+      font-size: 12px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
