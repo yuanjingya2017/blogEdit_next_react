@@ -30,7 +30,7 @@ export default class Header extends React.Component {
                     })
                 }} className={header.header_search_input} type="text" placeholder='请输入搜索内容' />
                 <span className={header.search_btn} onClick={(e) => {
-                    window.location.href = `/search?key=${this.state.search}`;
+                    window.location.href = `../?key=${this.state.search}`;
                 }}>SEARCH</span>
             </div>
         </div>
