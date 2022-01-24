@@ -1,5 +1,5 @@
 import * as React from 'react';
-import formStyle from './Form.module.scss';
+import formStyle from './form.module.scss';
 
 export default class Form extends React.Component {
     constructor (props, context) {
@@ -37,7 +37,6 @@ export default class Form extends React.Component {
                     },
                     item.props.children
                 )
-                console.log(childrenTemp, '------childrenTemp')
                 renderChildren.push(childrenTemp);
             }
         })

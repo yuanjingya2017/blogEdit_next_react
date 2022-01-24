@@ -1,0 +1,42 @@
+.message {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 0 24px;
+    .message_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: #817f7f;
+        font-size: 16px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f0eeee;
+        .left {
+            flex: 1;
+            .top {
+            }
+            .reuseblock {
+                width: 96%;
+                border-radius: 5px;
+                margin-top: 10px;
+                background-color: aliceblue;
+                padding: 24px;
+            }
+            .bottom {
+                margin-top: 10px;
+            }
+        }
+        .right {
+            font-size: 13px;
+            color: #999999;
+            .line {
+                color: #FAA05A;
+                font-weight: bold;
+                display: inline-block;
+                margin: 0 10px;
+            }
+            .reuse {
+                color: #817f7f;
+            }
+        }
+    }
+}

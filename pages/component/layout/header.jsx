@@ -1,5 +1,5 @@
 import * as React from 'react';
-import header from './Header.module.scss'
+import header from './header.module.scss'
 export default class Header extends React.Component {
     constructor (props) {
         super(props);
@@ -8,13 +8,13 @@ export default class Header extends React.Component {
          * 层级罗列？
          * 
          */
+        console.log(this.router)
         this.state = {
             headerTitle: ['YJY的网络日志', '首页', '文章详情'],
             search: ''
         }
     }
     render () {
-        console.log(header, '===header')
         return <div className={header.header} key='header'>
             <div className={header.header_crumb}>
                 {
@@ -30,7 +30,7 @@ export default class Header extends React.Component {
                     })
                 }} className={header.header_search_input} type="text" placeholder='请输入搜索内容' />
                 <span className={header.search_btn} onClick={(e) => {
-                    alert(this.state.search)
+                    window.location.href = `/search?key=${this.state.search}`;
                 }}>SEARCH</span>
             </div>
         </div>

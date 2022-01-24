@@ -1,8 +1,7 @@
 import * as React from 'react';
-import formStyle from './Form.module.scss';
+import formStyle from './form.module.scss';
 
 export const FormItem = (props) => {
-    console.log(props, '-----props')
     const { children , name  , handleChange , value , label , type } = props;
     const onChange = (value) => {
         /* 通知上一次value 已经改变 */

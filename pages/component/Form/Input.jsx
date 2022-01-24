@@ -1,4 +1,4 @@
-import formStyle from './Form.module.scss';
+import formStyle from './form.module.scss';
 
 export const Input = ({onChange, value, type = 'text', name}) => {
     return type == 'text' ? <input className={formStyle.item_input} type={type} value={value} onChange={(e) => {

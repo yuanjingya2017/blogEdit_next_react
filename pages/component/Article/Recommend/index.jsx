@@ -19,9 +19,10 @@ export default class Recommand extends React.Component {
             <div className={recommend.title}>推荐列表</div>
             <div className={recommend.list}>
                 {
-                    this.state.recommendList.map(item => {
-                        return <div className={recommend.list_item}>
+                    this.state.recommendList.map((item, index) => {
+                        return <div key={`${item.id}_${index}`} className={recommend.list_item}>
                             <span>{item.name}</span>
+                            {/* todo 较长的情况展示文章简介 */}
                             <span>{item.time}</span>
                         </div>
                     })

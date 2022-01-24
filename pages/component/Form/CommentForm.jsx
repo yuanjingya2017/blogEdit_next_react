@@ -4,7 +4,7 @@ import {
     Input
 } from './index';
 import * as React from 'react';
-import commonformStyle from './CommentForm.module.scss';
+import commonformStyle from './commentForm.module.scss';
 export default class CommentForm extends React.Component {
     constructor (props) {
         super(props);
