@@ -1,7 +1,14 @@
 .search {
-    background-color: #fff;
-    margin: 0 auto;
-    width: 70%;
+    // background-color: #fff;
+    // margin: 0 auto;
+    // width: 70%;
     min-height: 100vh;
     padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .left {
+        flex: 1;
+        margin-right: 50px;
+    }
 }
