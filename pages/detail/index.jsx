@@ -15,13 +15,13 @@ export default class Detail extends React.Component {
     }
     submit =()=>{
         /* 表单提交 */
-        form.current.submitForm((formValue)=>{
+        this.state.form.current.submitForm((formValue)=>{
             console.log(formValue)
         })
     }
     reset = ()=>{
         /* 表单重置 */
-        form.current.resetForm()
+        this.state.form.current.resetForm()
     }
     render () {
         return <div className={detailStyle.detail}>
@@ -42,7 +42,7 @@ export default class Detail extends React.Component {
                 </div>
             </div>
             <Recommand />
-            <CommentForm ref={this.state.form} />
+            <CommentForm refPass={this.state.form} submit={e => this.submit()} reset={e => this.reset()}  />
             <MessageList />
         </div>
     }

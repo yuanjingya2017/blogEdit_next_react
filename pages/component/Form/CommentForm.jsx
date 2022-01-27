@@ -11,10 +11,10 @@ export default class CommentForm extends React.Component {
     }
     render () {
         const {
-            ref, submit, reset
+            refPass, submit, reset
         } = this.props;
         return <div className={commonformStyle.commonform}>
-            <Form ref={ ref } >
+            <Form ref={ refPass } >
                 <FormItem name="mes" label="留言"  >
                     <Input type='textarea' name='mes' />
                 </FormItem>
